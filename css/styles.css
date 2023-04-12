@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 26px !important;
+  font-weight: bold !important;
+}
+
+.company-name {
+  color: #5900ff;
+}
+
+.main-hero {
+  height: 100%;
+  background-image: url(../img/hero_image.jpeg);
+  background-position: 0px 0px;
+  background-size: auto;
+}
+
+.hero-slogan {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 180px 25% 180px 60px;
+}
+
+.heading {
+  margin-top: 40px;
+  padding-left: 60px;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.technologies-section span {
+  font-weight: bold;
+}
+
+.technologies-section-title {
+  font-weight: bold;
+}
+
+.projects-container .project {
+  background-color: #141414;
+}
+
+.projects-container .project .project-description {
+  color: #929292;
+}
+
+#team .foto-img {
+  background-color: #ff8622;
+  border-radius: 2000px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+#team .team-member {
+  background-color: #141414;
+}
+
+.opinion {
+  background-color: #141414;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-container .project {
+    width: 45%;
+  }
+  #team .team-member {
+    width: 45%;
+  }
+
+  .opinion {
+    width: 31%;
+  }
+}
+
+.opinion .opinion-foto img {
+  width: 80px;
+  margin-right: 20px;
+  background-color: #4268ff;
+  border-radius: 20px;
+}
+
+.opinion-author-profession {
+  color: #5900ff;
+}
+
+label {
+  display: block;
+  color: #929292;
+}
+
+.form-text-field {
+  height: 50px;
+  padding: 8px 12px;
+  background-color: #161616;
+  outline: 1.5px solid #5900ff;
+}
+
+.submit-button {
+  font-weight: 500;
+  background-color: #5900ff !important;
+}
+
+.text-gray p {
+  color: #929292;
+}
+
+.text-gray {
+  color: #929292;
+}
+
+.text-purple {
+  color: #5900ff;
+}
