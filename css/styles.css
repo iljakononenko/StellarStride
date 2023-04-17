@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -10,6 +39,7 @@ h1 {
 
 .company-name {
   color: #5900ff;
+  font-weight: 600;
 }
 
 .main-hero {
@@ -23,7 +53,8 @@ h1 {
   color: #fff;
   font-size: 28px;
   font-weight: 500;
-  padding: 180px 25% 180px 60px;
+  padding: 20% 25% 20% 60px;
+  backdrop-filter: blur(3px);
 }
 
 .heading {
@@ -53,12 +84,21 @@ h1 {
   color: #929292;
 }
 
-#team .foto-img {
+#team .foto-img-wrapper {
   background-color: #ff8622;
-  border-radius: 2000px;
-  width: 200px;
-  height: 200px;
   padding: 20px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 2000px;
+}
+
+#team .foto-img {
+  max-height: 200px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/foto.png) center no-repeat;
+  border-radius: 2000px;
+  background-size: 80%;
 }
 
 #team .team-member {
@@ -82,11 +122,19 @@ h1 {
   }
 }
 
-.opinion .opinion-foto img {
-  width: 80px;
-  margin-right: 20px;
+.opinion .opinion-foto-wrapper {
   background-color: #4268ff;
-  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2000px;
+}
+
+.opinion .opinion-foto {
+  width: 40px;
+  height: 40px;
+  background: url(../img/foto.png) center no-repeat;
+  border-radius: 2000px;
+  background-size: 70%;
 }
 
 .opinion-author-profession {
@@ -120,4 +168,10 @@ label {
 
 .text-purple {
   color: #5900ff;
+}
+
+@media screen and (min-width: 1440px) {
+  #technologies.tech-stack {
+    max-width: 1200px;
+  }
 }
