@@ -149,6 +149,7 @@ label {
 .form-text-field {
   height: 50px;
   padding: 8px 12px;
+  padding-top: 24px;
   background-color: #161616;
   outline: 1.5px solid #5900ff;
 }
@@ -174,4 +175,19 @@ label {
   #technologies.tech-stack {
     max-width: 1200px;
   }
+}
+
+.floating-label-input-wrapper input:focus + label.absolute.floating-label,
+label.absolute.floating-label.pinned {
+  transform: translateY(20%);
+  font-size: 0.75rem;
+  left: 10px;
+}
+
+label.absolute.floating-label {
+  transform: translateY(50%);
+  top: 0;
+  left: 15px;
+  transition: 0.2s;
+  cursor: text;
 }
